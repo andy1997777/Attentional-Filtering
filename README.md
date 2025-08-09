@@ -1,0 +1,1 @@
+This repository contains an implementation of the Attentional Filter for state estimation in the Lorenz system based on the paper "Attentional filtering: Dynamic system state estimation as an attention".  
