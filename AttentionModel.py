@@ -101,7 +101,7 @@ class RNNAttention(nn.Module):
 
         a1 = a[:, :, 0]
         a2 = a[:, :, 1]
-        return a1 * torch.squeeze(sub_estimation1) + a2 * torch.squeeze(sub_estimation2)
+        return torch.unsqueeze(a1 * torch.squeeze(sub_estimation1) + a2 * torch.squeeze(sub_estimation2), dim=-1)
     
 
 if __name__ == "__main__":
